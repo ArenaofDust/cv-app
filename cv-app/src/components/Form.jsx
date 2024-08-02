@@ -1,5 +1,6 @@
-import {useState} from "react";
+import { useState } from "react";
 import GeneralInfo from "./GeneralInfo";
+import "../styles/form.css"
 
 const Form = ({
     onSaveGeneralInfo,
@@ -8,7 +9,7 @@ const Form = ({
         name: "",
         email: "",
         phone: "",
-        location: ""
+        location: "",
     });
 
     const handleGeneralInfoSave = (info) => {

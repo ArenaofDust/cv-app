@@ -1,4 +1,5 @@
-import {useState} from "react";
+import { useState } from "react";
+import "../styles/general.css";
 
 const GeneralInfo = ({ onSave }) => {
     //Info state object set for personal details component
@@ -11,7 +12,7 @@ const GeneralInfo = ({ onSave }) => {
 
     const handleChange = (e) => {
         //New object has to be made, objects are immutable
-        const {name, value} = e.target; 
+        const { name, value } = e.target; 
 
         //Call setInfo to update changes
         setInfo({ ...info, [name]: value});
@@ -64,6 +65,5 @@ const GeneralInfo = ({ onSave }) => {
     );
 
 };
-
 export default GeneralInfo;
 

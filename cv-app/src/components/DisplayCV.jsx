@@ -1,3 +1,5 @@
+import "../styles/displaycv.css";
+
 const DisplayCV = ({generalInfo}) => {
     return (
         <div className="display">
