@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Form from "./Form";
 import DisplayCV from "./DisplayCV";
+import "../styles/cvform.css";
 
 const CVForm = () => {
     const initialInfo = {
