@@ -1,69 +1,63 @@
 import { useState } from "react";
-import "../styles/general.css";
+import "../styles/GeneralInfo.css";
 
 const GeneralInfo = ({ onSave }) => {
-    //Info state object set for personal details component
-    const [info, setInfo] = useState({
-        name: "",
-        email: "",
-        phone: "",
-        location: "",
-    });
+  const [info, setInfo] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    location: "",
+  });
 
-    const handleChange = (e) => {
-        //New object has to be made, objects are immutable
-        const { name, value } = e.target; 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setInfo({ ...info, [name]: value });
+  };
 
-        //Call setInfo to update changes
-        setInfo({ ...info, [name]: value});
-        
-    };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onSave(info);
+  };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        onSave(info);
-    };
-
-    return (
-        <form onSubmit={handleSubmit}>
-            <h3 className="heading">
-                <div className="icon">
-                    <span className="material-symbols-outlined">person</span>
-                    Personal Details
-                </div>
-            </h3>
-            <input
-                type="text"
-                name="name"
-                value={info.name}
-                onChange={handleChange}
-                placeholder="John Ford"
-            />
-            <input
-                type="text"
-                name="email"
-                value={info.email}
-                onChange={handleChange}
-                placeholder="ford@gmail.com"
-            />
-            <input
-                type="text"
-                name="phone"
-                value={info.phone}
-                onChange={handleChange}
-                placeholder="Phone Number (+91 9374808167)"
-            />
-            <input
-                type="text"
-                name="location"
-                value={info.location}
-                onChange={handleChange}
-                placeholder="Location (State)"
-            />
-            <button type="submit">Add</button>
-        </form>
-    );
-
+  return (
+    <form onSubmit={handleSubmit}>
+      <h3 className="heading">
+        <div className="icon">
+          <span className="material-symbols-outlined">person</span>
+          Personal Details
+        </div>
+      </h3>
+      <input
+        type="text"
+        name="name"
+        value={info.name}
+        onChange={handleChange}
+        placeholder="John Ford"
+      />
+      <input
+        type="email"
+        name="email"
+        value={info.email}
+        onChange={handleChange}
+        placeholder="ford@gmail.com"
+      />
+      <input
+        type="text"
+        name="phone"
+        value={info.phone}
+        onChange={handleChange}
+        placeholder="Phone Number (+91 9374808167)"
+      />
+      <input
+        type="text"
+        name="location"
+        value={info.location}
+        onChange={handleChange}
+        placeholder="Location (state)"
+      />
+      <button type="submit">Add</button>
+    </form>
+  );
 };
-export default GeneralInfo;
 
+export default GeneralInfo;

@@ -1,4 +1,4 @@
-import "../styles/displaycv.css";
+import "../styles/DisplayCV.css";
 
 const DisplayCV = ({generalInfo}) => {
     return (

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Form from "./Form";
 import DisplayCV from "./DisplayCV";
-import "../styles/cvform.css";
+import "../styles/CVForm.css";
 
 const CVForm = () => {
     const initialInfo = {
@@ -19,7 +19,7 @@ const CVForm = () => {
         <div className="cvForm">
             <div className="Form">
                 <Form 
-                    onSaveGeneralInfo={(info) => setInfo((prevInfo) => ({...prevInfo, generalInfo: info}))}
+                    onSaveGeneralInfo={(info) => setInfo((prevInfo) => ({ ...prevInfo, generalInfo: info }))}
                 />
                 <button onClick={clearCV}>Clear Resume</button>
             </div>

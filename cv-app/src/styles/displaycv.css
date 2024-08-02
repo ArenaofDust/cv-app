@@ -1,9 +1,9 @@
 .display {
-    background-color: white;
+    background-color: black;
 }
   
 .header {
-    background-color: rgb(2, 2, 49);
+    background-color: rgb(7, 7, 8);
     padding: 12px;
     color: white;
     text-align: center;
@@ -14,7 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: 30px;
 }
   
 .personalDetails {
@@ -24,27 +24,3 @@
     gap: 5px;
 }
   
-h3 {
-    color: black;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-  
-p {
-    margin-bottom: 5px;
-}
-  
-.sec {
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    flex: 1;
-}
-  
-.fieldName,.fieldDate {
-    font-weight: bold;
-}
-  
-.body{
-    padding: 20px;
-}

@@ -3,6 +3,8 @@ input {
     flex-direction: column;
     margin-bottom: 10px;
     flex: 1;
+    padding: 5px;
+    margin-left: 10px;
 }
 
 .heading {
@@ -10,5 +12,6 @@ input {
     display: flex;
     justify-content: top;
     align-items: center;
-    gap: 4px;
+    gap: 20px;
+    margin-left: 10px;
 }
