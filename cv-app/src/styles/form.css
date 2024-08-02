@@ -1,0 +1,39 @@
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+.delete, .toggle-button {
+    color: grey;
+    border: none;
+    background-color: transparent;
+}
+  
+.delete:hover::after {
+    border: none;
+}
+  
+.list {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: black;
+    list-style: none;
+    padding: 12px 12px 12px 24px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+ul{
+      padding: 0;
+}
+  
+  /* In your CSS file */
+.resume-display {
+    overflow: hidden;
+    background: #fff;
+    border-radius: 0;
+    display: none; /* Hide by default */
+}

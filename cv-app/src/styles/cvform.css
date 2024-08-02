@@ -1,0 +1,18 @@
+.cvForm {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    height: 100vh;
+    margin: 24px;
+}
+  
+.Form {
+    width: 40%;
+}
+  
+.DisplayCV {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 60%;
+}
